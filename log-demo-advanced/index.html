@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link type="text/css" rel="stylesheet" href="scroll.css"/>
+    <script type="text/javascript" src="scroll.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+  </head>
+  <body onload="initData();">
+    <h3>Live log scroll demo</h3>
+    <div id="mainFrame" class="viewer-frame">
+       <div id="scrollWrapper">
+       </div>
+    </div>
+    <button id="pauseCtrl" type="button" onclick="scrollLogToggle();">||</button> 
+    <button id="demoCtrl" type="button" onclick="appendRandomLog();">Append Random Log</button> 
+    <br/>
+    Line filter: 
+    <input type="checkbox" id="severeChk" name="severeCheck" onclick="filterLines();" /> severe
+    <input type="checkbox" id="infoChk" name="infoCheck" onclick="filterLines();" /> info
+  </body>
+</html>      
+  

@@ -1,0 +1,17 @@
+
+body {
+   font-family: 'Verdana', 'Sans-serif';
+}
+
+.scroll-window-wrapper {
+    width: 600px;
+    height: 300px;
+    border: 1px;
+    background-color: black;
+    color: white;
+    overflow: scroll;
+    overflow-x: auto;
+    white-space: pre;
+    font-family: monospace;
+    font-size: 1em;
+}

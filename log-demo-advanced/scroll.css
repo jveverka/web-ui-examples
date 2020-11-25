@@ -1,0 +1,34 @@
+
+body {
+   font-family: 'Verdana', 'Sans-serif';
+}
+
+.viewer-frame {
+   width: 100%;
+   height: 400px;
+}
+
+.log-viewer-wrapper {
+   width: auto;
+   height: 100%;
+   border: 1px;
+   border-color: black;
+   background-color: black;
+   color: white;
+   overflow: scroll;
+   overflow-x: auto;
+   font-family: monospace;
+   font-size: 1em;
+}
+
+.log-viewer-wrapper table tr td {
+   white-space: pre;
+}
+
+.log-viewer-line-info {
+   color: green;
+}
+
+.log-viewer-line-severe {
+   color: red;
+}

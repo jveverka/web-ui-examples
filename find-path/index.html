@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="pathfind.js"></script>
+  <script type="text/javascript" src="search.js"></script>
+  <link rel="stylesheet" type="text/css" href="pathfind.css">
+</head>
+
+<body onload="initOnPageLoad();">
+  
+  <h2>Find path</h2>  
+
+  <div id="dataTableWrapper" class="dataTable"></div> 
+
+  <p class="inputPanel">
+    <button type="button" onclick="startAction();" id="startStopBtn" title="start path search ...">Go !</button>
+
+    <select id="inputTypeSelector" title="select edit action">
+      <option value="obstacles">Add obstacles</option>
+      <option value="start">Place start position</option>
+      <option value="finish">Place finish position</option>
+    </select>
+
+    <select id="difficultyLevelSelector" onchange="loadLevel();" title="use maze map">
+      <option value="easy">Easy</option>
+      <option value="stillEasy">Still easy</option>
+      <option value="noProblem">No Problem</option>
+      <option value="maze">Maze</option>
+      <option value="nightmare">Nightmare</option>
+      <option value="impossible">Impossible</option>
+    </select>
+  </p>
+
+  <p class="statusPanel">
+    <table>
+     <tr><td>start</td><td id="spositionX">00</td><td id="spositionY">00</td><td id="scellType"></td></tr>
+     <tr><td>finish</td><td id="fpositionX">00</td><td id="fpositionY">00</td><td id="fcellType"></td></tr>
+     <tr><td>pointer</td><td id="ppositionX">00</td><td id="ppositionY">00</td><td id="pcellType">START</td></tr>
+    </table>
+    <table>
+     <tr><td>result</td><td id="resultMessage">NA</td><td></td></tr>
+     <tr><td>steps</td><td id="stepsTaken">0</td><td></td></tr>
+     <tr><td>time</td><td id="timeSpend">0</td><td>ms</td></tr>
+     <tr><td>path nodes</td><td id="pathNodes">0</td><td></td></tr>
+     <tr><td>level</td><td id="levelName">0</td><td></td></tr>
+    </table>
+  </p>
+
+</body>
+</html>
+
